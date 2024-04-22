@@ -1,0 +1,36 @@
+[
+  {
+    "name": "India",
+    "capital": "New Delhi",
+    "subregion": "Southern Asia",
+    "region": "Asia",
+    "population": 1380004385,
+    "latlng": [
+      20.0,
+      77.0
+    ],
+    "currencies": [
+      {
+        "code": "INR",
+        "name": "Indian rupee",
+        "symbol": "â‚¹"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "hi",
+        "iso639_2": "hin",
+        "name": "Hindi",
+        "nativeName": "à¤¹à¤¿à¤¨à¥à¤¦à¥€"
+      },
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      }
+    ],
+    "flag": "https://flagcdn.com/in.svg",
+    "independent": false
+  }
+]

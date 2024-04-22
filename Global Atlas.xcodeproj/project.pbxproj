@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CBFD7842BD5817F00491CE5 /* CountryDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFD7832BD5817F00491CE5 /* CountryDetailItemView.swift */; };
+		9CEA37FC2BD4E72200D7BDDC /* Global_AtlasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA37FB2BD4E72200D7BDDC /* Global_AtlasApp.swift */; };
+		9CEA38002BD4E72400D7BDDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA37FF2BD4E72400D7BDDC /* Assets.xcassets */; };
+		9CEA38032BD4E72400D7BDDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA38022BD4E72400D7BDDC /* Preview Assets.xcassets */; };
+		9CEA38172BD4E72400D7BDDC /* Global_AtlasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38162BD4E72400D7BDDC /* Global_AtlasUITests.swift */; };
+		9CEA38192BD4E72400D7BDDC /* Global_AtlasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38182BD4E72400D7BDDC /* Global_AtlasUITestsLaunchTests.swift */; };
+		9CEA38262BD4EC6C00D7BDDC /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38252BD4EC6C00D7BDDC /* TestUtils.swift */; };
+		9CEA38292BD4ED6F00D7BDDC /* Countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA38282BD4ED6F00D7BDDC /* Countries.json */; };
+		9CEA382D2BD4F6E100D7BDDC /* CountryDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA382C2BD4F6E100D7BDDC /* CountryDetails.json */; };
+		9CEA38382BD4F92D00D7BDDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38372BD4F92D00D7BDDC /* Constants.swift */; };
+		9CEA383A2BD4F9A100D7BDDC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38392BD4F9A100D7BDDC /* NetworkManager.swift */; };
+		9CEA383C2BD4F9B200D7BDDC /* NetworkServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA383B2BD4F9B200D7BDDC /* NetworkServiceError.swift */; };
+		9CEA383F2BD4FA5000D7BDDC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9CEA383E2BD4FA5000D7BDDC /* Alamofire */; };
+		9CEA38422BD4FA9F00D7BDDC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9CEA38412BD4FA9F00D7BDDC /* Kingfisher */; };
+		9CEA38462BD4FE1800D7BDDC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CEA38452BD4FE1800D7BDDC /* Colors.xcassets */; };
+		9CEA384E2BD4FF3C00D7BDDC /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA384D2BD4FF3C00D7BDDC /* CountryListViewModel.swift */; };
+		9CEA38502BD4FF4D00D7BDDC /* CountryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA384F2BD4FF4D00D7BDDC /* CountryDetailsViewModel.swift */; };
+		9CEA38522BD4FF6600D7BDDC /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38512BD4FF6600D7BDDC /* Country.swift */; };
+		9CEA38582BD5015700D7BDDC /* GetCountryListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38572BD5015700D7BDDC /* GetCountryListUsecase.swift */; };
+		9CEA385A2BD502A300D7BDDC /* GetCountryDetailsUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38592BD502A300D7BDDC /* GetCountryDetailsUsecase.swift */; };
+		9CEA385C2BD5033E00D7BDDC /* CountryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA385B2BD5033E00D7BDDC /* CountryListService.swift */; };
+		9CEA385E2BD5035D00D7BDDC /* CountryDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA385D2BD5035D00D7BDDC /* CountryDetailsService.swift */; };
+		9CEA38602BD51AC200D7BDDC /* CountryFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA385F2BD51AC200D7BDDC /* CountryFields.swift */; };
+		9CEA38622BD51D0F00D7BDDC /* CountryListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38612BD51D0F00D7BDDC /* CountryListTests.swift */; };
+		9CEA38642BD51D3500D7BDDC /* CountryDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38632BD51D3500D7BDDC /* CountryDetailsTests.swift */; };
+		9CEA38682BD51F7F00D7BDDC /* MockCountryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38672BD51F7F00D7BDDC /* MockCountryListService.swift */; };
+		9CEA386A2BD521A900D7BDDC /* MockCountryDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38692BD521A900D7BDDC /* MockCountryDetailsService.swift */; };
+		9CEA386C2BD524AD00D7BDDC /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA386B2BD524AD00D7BDDC /* ViewState.swift */; };
+		9CEA386E2BD52B9500D7BDDC /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA386D2BD52B9500D7BDDC /* CountryListView.swift */; };
+		9CEA38712BD532BF00D7BDDC /* CountryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEA38702BD532BF00D7BDDC /* CountryDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CEA38092BD4E72400D7BDDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CEA37F02BD4E72200D7BDDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CEA37F72BD4E72200D7BDDC;
+			remoteInfo = "Global Atlas";
+		};
+		9CEA38132BD4E72400D7BDDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CEA37F02BD4E72200D7BDDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CEA37F72BD4E72200D7BDDC;
+			remoteInfo = "Global Atlas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CBFD7832BD5817F00491CE5 /* CountryDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailItemView.swift; sourceTree = "<group>"; };
+		9CEA37F82BD4E72200D7BDDC /* Global Atlas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Atlas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA37FB2BD4E72200D7BDDC /* Global_AtlasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_AtlasApp.swift; sourceTree = "<group>"; };
+		9CEA37FF2BD4E72400D7BDDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CEA38022BD4E72400D7BDDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CEA38082BD4E72400D7BDDC /* Global AtlasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Global AtlasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA38122BD4E72400D7BDDC /* Global AtlasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Global AtlasUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CEA38162BD4E72400D7BDDC /* Global_AtlasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_AtlasUITests.swift; sourceTree = "<group>"; };
+		9CEA38182BD4E72400D7BDDC /* Global_AtlasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global_AtlasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CEA38252BD4EC6C00D7BDDC /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		9CEA38282BD4ED6F00D7BDDC /* Countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Countries.json; sourceTree = "<group>"; };
+		9CEA382C2BD4F6E100D7BDDC /* CountryDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryDetails.json; sourceTree = "<group>"; };
+		9CEA38372BD4F92D00D7BDDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CEA38392BD4F9A100D7BDDC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9CEA383B2BD4F9B200D7BDDC /* NetworkServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceError.swift; sourceTree = "<group>"; };
+		9CEA38452BD4FE1800D7BDDC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		9CEA384D2BD4FF3C00D7BDDC /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		9CEA384F2BD4FF4D00D7BDDC /* CountryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewModel.swift; sourceTree = "<group>"; };
+		9CEA38512BD4FF6600D7BDDC /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		9CEA38572BD5015700D7BDDC /* GetCountryListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryListUsecase.swift; sourceTree = "<group>"; };
+		9CEA38592BD502A300D7BDDC /* GetCountryDetailsUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountryDetailsUsecase.swift; sourceTree = "<group>"; };
+		9CEA385B2BD5033E00D7BDDC /* CountryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListService.swift; sourceTree = "<group>"; };
+		9CEA385D2BD5035D00D7BDDC /* CountryDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsService.swift; sourceTree = "<group>"; };
+		9CEA385F2BD51AC200D7BDDC /* CountryFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFields.swift; sourceTree = "<group>"; };
+		9CEA38612BD51D0F00D7BDDC /* CountryListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTests.swift; sourceTree = "<group>"; };
+		9CEA38632BD51D3500D7BDDC /* CountryDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsTests.swift; sourceTree = "<group>"; };
+		9CEA38672BD51F7F00D7BDDC /* MockCountryListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryListService.swift; sourceTree = "<group>"; };
+		9CEA38692BD521A900D7BDDC /* MockCountryDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountryDetailsService.swift; sourceTree = "<group>"; };
+		9CEA386B2BD524AD00D7BDDC /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		9CEA386D2BD52B9500D7BDDC /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		9CEA38702BD532BF00D7BDDC /* CountryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CEA37F52BD4E72200D7BDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38422BD4FA9F00D7BDDC /* Kingfisher in Frameworks */,
+				9CEA383F2BD4FA5000D7BDDC /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA38052BD4E72400D7BDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA380F2BD4E72400D7BDDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CEA37EF2BD4E72200D7BDDC = {
+			isa = PBXGroup;
+			children = (
+				9CEA37FA2BD4E72200D7BDDC /* Global Atlas */,
+				9CEA380B2BD4E72400D7BDDC /* Global AtlasTests */,
+				9CEA38152BD4E72400D7BDDC /* Global AtlasUITests */,
+				9CEA37F92BD4E72200D7BDDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CEA37F92BD4E72200D7BDDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA37F82BD4E72200D7BDDC /* Global Atlas.app */,
+				9CEA38082BD4E72400D7BDDC /* Global AtlasTests.xctest */,
+				9CEA38122BD4E72400D7BDDC /* Global AtlasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CEA37FA2BD4E72200D7BDDC /* Global Atlas */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA37FB2BD4E72200D7BDDC /* Global_AtlasApp.swift */,
+				9CEA38302BD4F80800D7BDDC /* Features */,
+				9CEA38332BD4F84400D7BDDC /* Networking */,
+				9CEA38362BD4F90600D7BDDC /* Utilities */,
+				9CEA382E2BD4F77900D7BDDC /* Resources */,
+				9CEA38012BD4E72400D7BDDC /* Preview Content */,
+			);
+			path = "Global Atlas";
+			sourceTree = "<group>";
+		};
+		9CEA38012BD4E72400D7BDDC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38022BD4E72400D7BDDC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CEA380B2BD4E72400D7BDDC /* Global AtlasTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38652BD51F5300D7BDDC /* CountryListTests */,
+				9CEA38662BD51F6900D7BDDC /* CountryDetailsTests */,
+				9CEA38272BD4ED2000D7BDDC /* MockResponses */,
+				9CEA38252BD4EC6C00D7BDDC /* TestUtils.swift */,
+			);
+			path = "Global AtlasTests";
+			sourceTree = "<group>";
+		};
+		9CEA38152BD4E72400D7BDDC /* Global AtlasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38162BD4E72400D7BDDC /* Global_AtlasUITests.swift */,
+				9CEA38182BD4E72400D7BDDC /* Global_AtlasUITestsLaunchTests.swift */,
+			);
+			path = "Global AtlasUITests";
+			sourceTree = "<group>";
+		};
+		9CEA38272BD4ED2000D7BDDC /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38282BD4ED6F00D7BDDC /* Countries.json */,
+				9CEA382C2BD4F6E100D7BDDC /* CountryDetails.json */,
+			);
+			path = MockResponses;
+			sourceTree = "<group>";
+		};
+		9CEA382E2BD4F77900D7BDDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA37FF2BD4E72400D7BDDC /* Assets.xcassets */,
+				9CEA38452BD4FE1800D7BDDC /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9CEA38302BD4F80800D7BDDC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA384B2BD4FEE000D7BDDC /* Countries */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9CEA38312BD4F81600D7BDDC /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA384D2BD4FF3C00D7BDDC /* CountryListViewModel.swift */,
+				9CEA386D2BD52B9500D7BDDC /* CountryListView.swift */,
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		9CEA38322BD4F81F00D7BDDC /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA384F2BD4FF4D00D7BDDC /* CountryDetailsViewModel.swift */,
+				9CEA38702BD532BF00D7BDDC /* CountryDetailsView.swift */,
+				9CBFD7832BD5817F00491CE5 /* CountryDetailItemView.swift */,
+			);
+			path = CountryDetails;
+			sourceTree = "<group>";
+		};
+		9CEA38332BD4F84400D7BDDC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38392BD4F9A100D7BDDC /* NetworkManager.swift */,
+				9CEA383B2BD4F9B200D7BDDC /* NetworkServiceError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9CEA38342BD4F8B100D7BDDC /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38572BD5015700D7BDDC /* GetCountryListUsecase.swift */,
+				9CEA38592BD502A300D7BDDC /* GetCountryDetailsUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		9CEA38352BD4F8CE00D7BDDC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA385B2BD5033E00D7BDDC /* CountryListService.swift */,
+				9CEA385D2BD5035D00D7BDDC /* CountryDetailsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9CEA38362BD4F90600D7BDDC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38372BD4F92D00D7BDDC /* Constants.swift */,
+				9CEA385F2BD51AC200D7BDDC /* CountryFields.swift */,
+				9CEA386B2BD524AD00D7BDDC /* ViewState.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9CEA384A2BD4FE8300D7BDDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38532BD5006400D7BDDC /* Request */,
+				9CEA38542BD5006D00D7BDDC /* Response */,
+				9CEA38512BD4FF6600D7BDDC /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CEA384B2BD4FEE000D7BDDC /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38342BD4F8B100D7BDDC /* Usecases */,
+				9CEA38352BD4F8CE00D7BDDC /* Services */,
+				9CEA384A2BD4FE8300D7BDDC /* Models */,
+				9CEA384C2BD4FEEA00D7BDDC /* Scenes */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		9CEA384C2BD4FEEA00D7BDDC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38312BD4F81600D7BDDC /* CountryList */,
+				9CEA38322BD4F81F00D7BDDC /* CountryDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9CEA38532BD5006400D7BDDC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9CEA38542BD5006D00D7BDDC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		9CEA38652BD51F5300D7BDDC /* CountryListTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38612BD51D0F00D7BDDC /* CountryListTests.swift */,
+				9CEA38672BD51F7F00D7BDDC /* MockCountryListService.swift */,
+			);
+			path = CountryListTests;
+			sourceTree = "<group>";
+		};
+		9CEA38662BD51F6900D7BDDC /* CountryDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CEA38632BD51D3500D7BDDC /* CountryDetailsTests.swift */,
+				9CEA38692BD521A900D7BDDC /* MockCountryDetailsService.swift */,
+			);
+			path = CountryDetailsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CEA37F72BD4E72200D7BDDC /* Global Atlas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CEA381C2BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global Atlas" */;
+			buildPhases = (
+				9CEA37F42BD4E72200D7BDDC /* Sources */,
+				9CEA37F52BD4E72200D7BDDC /* Frameworks */,
+				9CEA37F62BD4E72200D7BDDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Global Atlas";
+			packageProductDependencies = (
+				9CEA383E2BD4FA5000D7BDDC /* Alamofire */,
+				9CEA38412BD4FA9F00D7BDDC /* Kingfisher */,
+			);
+			productName = "Global Atlas";
+			productReference = 9CEA37F82BD4E72200D7BDDC /* Global Atlas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CEA38072BD4E72400D7BDDC /* Global AtlasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CEA381F2BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global AtlasTests" */;
+			buildPhases = (
+				9CEA38042BD4E72400D7BDDC /* Sources */,
+				9CEA38052BD4E72400D7BDDC /* Frameworks */,
+				9CEA38062BD4E72400D7BDDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CEA380A2BD4E72400D7BDDC /* PBXTargetDependency */,
+			);
+			name = "Global AtlasTests";
+			productName = "Global AtlasTests";
+			productReference = 9CEA38082BD4E72400D7BDDC /* Global AtlasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CEA38112BD4E72400D7BDDC /* Global AtlasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CEA38222BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global AtlasUITests" */;
+			buildPhases = (
+				9CEA380E2BD4E72400D7BDDC /* Sources */,
+				9CEA380F2BD4E72400D7BDDC /* Frameworks */,
+				9CEA38102BD4E72400D7BDDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CEA38142BD4E72400D7BDDC /* PBXTargetDependency */,
+			);
+			name = "Global AtlasUITests";
+			productName = "Global AtlasUITests";
+			productReference = 9CEA38122BD4E72400D7BDDC /* Global AtlasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CEA37F02BD4E72200D7BDDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9CEA37F72BD4E72200D7BDDC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9CEA38072BD4E72400D7BDDC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9CEA37F72BD4E72200D7BDDC;
+					};
+					9CEA38112BD4E72400D7BDDC = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9CEA37F72BD4E72200D7BDDC;
+					};
+				};
+			};
+			buildConfigurationList = 9CEA37F32BD4E72200D7BDDC /* Build configuration list for PBXProject "Global Atlas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CEA37EF2BD4E72200D7BDDC;
+			packageReferences = (
+				9CEA383D2BD4FA5000D7BDDC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9CEA38402BD4FA9F00D7BDDC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 9CEA37F92BD4E72200D7BDDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CEA37F72BD4E72200D7BDDC /* Global Atlas */,
+				9CEA38072BD4E72400D7BDDC /* Global AtlasTests */,
+				9CEA38112BD4E72400D7BDDC /* Global AtlasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CEA37F62BD4E72200D7BDDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38462BD4FE1800D7BDDC /* Colors.xcassets in Resources */,
+				9CEA38032BD4E72400D7BDDC /* Preview Assets.xcassets in Resources */,
+				9CEA38002BD4E72400D7BDDC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA38062BD4E72400D7BDDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38292BD4ED6F00D7BDDC /* Countries.json in Resources */,
+				9CEA382D2BD4F6E100D7BDDC /* CountryDetails.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA38102BD4E72400D7BDDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CEA37F42BD4E72200D7BDDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38712BD532BF00D7BDDC /* CountryDetailsView.swift in Sources */,
+				9CEA383C2BD4F9B200D7BDDC /* NetworkServiceError.swift in Sources */,
+				9CEA38522BD4FF6600D7BDDC /* Country.swift in Sources */,
+				9CEA385E2BD5035D00D7BDDC /* CountryDetailsService.swift in Sources */,
+				9CEA383A2BD4F9A100D7BDDC /* NetworkManager.swift in Sources */,
+				9CEA386C2BD524AD00D7BDDC /* ViewState.swift in Sources */,
+				9CEA385C2BD5033E00D7BDDC /* CountryListService.swift in Sources */,
+				9CEA38582BD5015700D7BDDC /* GetCountryListUsecase.swift in Sources */,
+				9CBFD7842BD5817F00491CE5 /* CountryDetailItemView.swift in Sources */,
+				9CEA37FC2BD4E72200D7BDDC /* Global_AtlasApp.swift in Sources */,
+				9CEA38382BD4F92D00D7BDDC /* Constants.swift in Sources */,
+				9CEA385A2BD502A300D7BDDC /* GetCountryDetailsUsecase.swift in Sources */,
+				9CEA38502BD4FF4D00D7BDDC /* CountryDetailsViewModel.swift in Sources */,
+				9CEA386E2BD52B9500D7BDDC /* CountryListView.swift in Sources */,
+				9CEA38602BD51AC200D7BDDC /* CountryFields.swift in Sources */,
+				9CEA384E2BD4FF3C00D7BDDC /* CountryListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA38042BD4E72400D7BDDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38642BD51D3500D7BDDC /* CountryDetailsTests.swift in Sources */,
+				9CEA38622BD51D0F00D7BDDC /* CountryListTests.swift in Sources */,
+				9CEA38682BD51F7F00D7BDDC /* MockCountryListService.swift in Sources */,
+				9CEA386A2BD521A900D7BDDC /* MockCountryDetailsService.swift in Sources */,
+				9CEA38262BD4EC6C00D7BDDC /* TestUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CEA380E2BD4E72400D7BDDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CEA38172BD4E72400D7BDDC /* Global_AtlasUITests.swift in Sources */,
+				9CEA38192BD4E72400D7BDDC /* Global_AtlasUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CEA380A2BD4E72400D7BDDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CEA37F72BD4E72200D7BDDC /* Global Atlas */;
+			targetProxy = 9CEA38092BD4E72400D7BDDC /* PBXContainerItemProxy */;
+		};
+		9CEA38142BD4E72400D7BDDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CEA37F72BD4E72200D7BDDC /* Global Atlas */;
+			targetProxy = 9CEA38132BD4E72400D7BDDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9CEA381A2BD4E72400D7BDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CEA381B2BD4E72400D7BDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CEA381D2BD4E72400D7BDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Global Atlas/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-Atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CEA381E2BD4E72400D7BDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Global Atlas/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-Atlas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9CEA38202BD4E72400D7BDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-AtlasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Global Atlas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Global Atlas";
+			};
+			name = Debug;
+		};
+		9CEA38212BD4E72400D7BDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-AtlasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Global Atlas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Global Atlas";
+			};
+			name = Release;
+		};
+		9CEA38232BD4E72400D7BDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-AtlasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Global Atlas";
+			};
+			name = Debug;
+		};
+		9CEA38242BD4E72400D7BDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JC32AYN8Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rick.Global-AtlasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Global Atlas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CEA37F32BD4E72200D7BDDC /* Build configuration list for PBXProject "Global Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA381A2BD4E72400D7BDDC /* Debug */,
+				9CEA381B2BD4E72400D7BDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CEA381C2BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global Atlas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA381D2BD4E72400D7BDDC /* Debug */,
+				9CEA381E2BD4E72400D7BDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CEA381F2BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global AtlasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA38202BD4E72400D7BDDC /* Debug */,
+				9CEA38212BD4E72400D7BDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CEA38222BD4E72400D7BDDC /* Build configuration list for PBXNativeTarget "Global AtlasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA38232BD4E72400D7BDDC /* Debug */,
+				9CEA38242BD4E72400D7BDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9CEA383D2BD4FA5000D7BDDC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		9CEA38402BD4FA9F00D7BDDC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9CEA383E2BD4FA5000D7BDDC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CEA383D2BD4FA5000D7BDDC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		9CEA38412BD4FA9F00D7BDDC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CEA38402BD4FA9F00D7BDDC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9CEA37F02BD4E72200D7BDDC /* Project object */;
+}
